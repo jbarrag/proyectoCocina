@@ -3,18 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cocina;
+package com.bancodebogota.fdm.cocina;
 
 /**
  *
  * @author Familia
  */
-public class Liquidos extends Ingredientes {
+public class Receta {
+    private int id;
+    private String nombre;
+    private Ingredientes[] listIngradedientes;
 
-   private int id;
-   private String nombre;
-   private String  tipo;
-   
+    public Receta(String nombre, Ingredientes[] listIngradedientes) {
+        this.nombre = nombre;
+        this.listIngradedientes = listIngradedientes;
+    }
+
     public int getId() {
         return id;
     }
@@ -31,17 +35,17 @@ public class Liquidos extends Ingredientes {
         this.nombre = nombre;
     }
 
-    public String getTipo() {
-        return tipo;
+    public Ingredientes[] getListIngradedientes() {
+        return listIngradedientes;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setListIngradedientes(Ingredientes[] listIngradedientes) {
+        this.listIngradedientes = listIngradedientes;
     }
 
     @Override
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-  
+            
 }

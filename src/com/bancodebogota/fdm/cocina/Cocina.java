@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cocina;
+package com.bancodebogota.fdm.cocina;
 
 /**
  *
@@ -18,13 +18,13 @@ public class Cocina {
     private String especialidad;
     private String direccion;
     private String telefono;
-    private JefeCocina jefecocina;
+    private JefeCocina jefeCocina;
 
     public Cocina(String especialidad, String direccion, String telefono, JefeCocina jefecocina) {
         this.especialidad = especialidad;
         this.direccion = direccion;
         this.telefono = telefono;
-        this.jefecocina = jefecocina;
+        this.jefeCocina = jefecocina;
     }
 
     public int getId() {
@@ -60,16 +60,16 @@ public class Cocina {
     }
 
     public JefeCocina getJefecocina() {
-        return jefecocina;
+        return jefeCocina;
     }
 
     public void setJefecocina(JefeCocina jefecocina) {
-        this.jefecocina = jefecocina;
+        this.jefeCocina = jefecocina;
     }
 
     @Override
     public String toString() {
-        return "Cocina Creada: " + "Especialidad: " + this.especialidad + ", Direccion: " + this.direccion + ", Telefono: " + this.telefono  + this.jefecocina ;
+        return "Cocina Creada: " + "Especialidad: " + this.especialidad + ", Direccion: " + this.direccion + ", Telefono: " + this.telefono  + this.jefeCocina ;
 
     }
     

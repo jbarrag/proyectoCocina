@@ -3,26 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cocina;
+package com.bancodebogota.fdm.cocina;
 
 /**
  *
  * @author Familia
  */
-public class Solido extends Ingredientes {
-   private int id;
-   private String nombre;
-   private String  tipo;
+public class Plato {
+    private String nombre;
+    private String tipo;
+    private int valor;
+    private String receta;
     
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -30,7 +22,16 @@ public class Solido extends Ingredientes {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
 
+    public Plato(String nombre,String tipo, int valor, String receta) {
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.valor = valor;
+        this.receta = receta;
+    }
+    
+    
     public String getTipo() {
         return tipo;
     }
@@ -39,7 +40,21 @@ public class Solido extends Ingredientes {
         this.tipo = tipo;
     }
 
-   
+    public int getValor() {
+        return valor;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
+    public String getReceta() {
+        return receta;
+    }
+
+    public void setReceta(String receta) {
+        this.receta = receta;
+    }
 
     @Override
     public String toString() {

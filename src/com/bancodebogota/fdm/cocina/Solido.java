@@ -3,15 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cocina;
+package com.bancodebogota.fdm.cocina;
 
 /**
  *
  * @author Familia
  */
-public class Carne {
-    private String tipo;
-    private String peso;
+public class Solido extends Ingredientes {
+   private int id;
+   private String nombre;
+   private String  tipo;
+    
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
     public String getTipo() {
         return tipo;
@@ -21,19 +39,11 @@ public class Carne {
         this.tipo = tipo;
     }
 
-    public String getPeso() {
-        return peso;
-    }
-
-    public void setPeso(String peso) {
-        this.peso = peso;
-    }
+   
 
     @Override
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
     
 }
